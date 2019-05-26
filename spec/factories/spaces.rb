@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :space do
-    name { "MyString" }
-    type { "Type" }
+    title { "MyString" }
+    category { "Type" }
     phone { "Phone number" }
     location { "MyString" }
     description { "MyText" }

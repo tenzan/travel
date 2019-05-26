@@ -1,1 +1,5 @@
 <%= link_to  "New Space", new_space_path %>
+
+<% @spaces.each do |space| %>
+<h2><%= link_to  space.title, space %></h2>
+<% end %>

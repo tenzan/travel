@@ -2,7 +2,13 @@ class SpacesController < ApplicationController
     before_action :set_space, only: [:show, :edit, :update, :destroy]
 
     def index
+        @spaces = Space.all
     end
+
+    def show
+       
+    end
+    
 
     def new
         @space = Space.new
@@ -29,7 +35,7 @@ class SpacesController < ApplicationController
     end
 
     def space_params
-        params.require(:space).permit(:name, :type, :phone, :location, :description)
+        params.require(:space).permit(:title, :category, :phone, :location, :description)
     end
     
     
