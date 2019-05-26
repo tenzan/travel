@@ -1,0 +1,9 @@
+<%= simple_form_for @space do |f| %>
+<%= f.input :title %>
+<%= f.input :category %>
+<%= f.input :phone %>
+<%= f.input :location %>
+<%= f.input :description, as: :text %>
+
+<%= f.button :submit, class: "btn-primary" %>
+<% end %>
